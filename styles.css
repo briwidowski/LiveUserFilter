@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ff6a33, yellow);
+    margin: 0;
+}
+
+.container {
+    box-shadow: 5px 8px 10px 5px black;
+    border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
+    width: 35%;
+    height: 85%;
+}
+
+.header {
+    background-color: #7F00FF;
+    color: white;
+    padding: 1rem 2rem;
+    max-height: 45%;
+}
+
+.header input {
+    border: none;
+    border-radius: 50px;
+    background-color: babyblue;
+    color: darkslategrey;
+    font-size: 14px;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: -0.3rem;
+    width: 100%;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.results-container {
+    max-height: 85%;
+    overflow-y: auto;
+}
+
+.user-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-list li {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.user-list li img {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+
+.user-list .user-info {
+    margin-left: 15px;
+    margin-top: 2px;
+    line-height: 14px;
+}
+
+.user-list .user-info p {
+    font-size: 14px;
+}
+
+.user-list li.hide {
+    display: none;
+}
+
+.results h4 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+@media only screen and (max-width: 1050px) {
+    .container {
+        height: 70%;
+        width: 45%;
+    }
+
+    .header {
+        padding: 0.5rem 1.5rem;
+    }
+
+    .header input {
+        font-size: 12px;
+        padding: 0.5rem 1rem;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        height: 75%;
+        width: 60%;
+    }
+
+    .header {
+        height: 32%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .header p {
+        font-size: 0.8rem;
+    }
+
+    .header input {
+        font-size: 10px;
+        padding: 0.5rem 1rem;
+        width: 85%;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+}
